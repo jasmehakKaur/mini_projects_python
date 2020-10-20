@@ -12,4 +12,4 @@ Note: Turn on the acess to less secure apps on your email id.
 
 Now,simply run:
 
-`python secndEmailPython.py`
+`python sendEmailPython.py`
