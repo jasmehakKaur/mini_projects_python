@@ -48,16 +48,12 @@ print(classification_report(y_test,predictions))
 
 
 def predict(text):
-    labels=['Spam','Not Spam']
+    labels=['Not Spam','Spam']
     x=cv.transform(text).toarray()
     p=model.predict(x)
     index=int(p[0])
     return str('The message is: '+labels[index])
     
-
-
-print(predict(['you won a lottery!']))
-
 
 #streamlit webapp
 st.title('SPAM CLASSIFIER')
